@@ -1,0 +1,3 @@
+Bu klasör GAMs_LinearGAM (Deneme1_All_Cols) modeline aittir.
+Cortez MAD Hatası: 19.798 ha
+R2 Skoru: 0.0106

@@ -1,0 +1,3 @@
+Bu klasör GAMs_LinearGAM (FWI_Setup) modeline aittir.
+Cortez MAD Hatası: 19.817 ha
+R2 Skoru: -0.0034

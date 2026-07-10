@@ -1,0 +1,9 @@
+artifact_path: model
+library: pygam
+metrics:
+  cortez_mad_ha: 19.8188
+  r2_score: -0.0006
+model_name: GAMs_LinearGAM
+run_id: 1ea69ade96a74b61bddd53684014abcc
+setup_name: ST_Setup
+status: Registered_to_MLflow_DB

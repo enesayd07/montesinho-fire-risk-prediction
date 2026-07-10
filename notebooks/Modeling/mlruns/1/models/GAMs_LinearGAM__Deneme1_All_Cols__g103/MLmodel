@@ -1,0 +1,9 @@
+artifact_path: model
+library: pygam
+metrics:
+  cortez_mad_ha: 19.798
+  r2_score: 0.0106
+model_name: GAMs_LinearGAM
+run_id: aea958f7cfbc421194aa649cec011aa6
+setup_name: Deneme1_All_Cols
+status: Registered_to_MLflow_DB
