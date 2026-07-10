@@ -1,0 +1,9 @@
+artifact_location: file:///c:/Users/Asus/montesinho-fire-risk-prediction/notebooks/Modeling/mlruns/725604473285765890
+creation_time: 1783708752087
+effective_trace_archival_retention: null
+experiment_id: '725604473285765890'
+last_update_time: 1783708752087
+lifecycle_stage: active
+name: 4_Optuna_Physical_Armor
+trace_location: null
+workspace: default

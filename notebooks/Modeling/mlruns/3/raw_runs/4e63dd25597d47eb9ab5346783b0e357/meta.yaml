@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/Asus/montesinho-fire-risk-prediction/notebooks/Modeling/mlruns/3/4e63dd25597d47eb9ab5346783b0e357/artifacts
+end_time: 1783702336806
+entry_point_name: ''
+experiment_id: '3'
+lifecycle_stage: active
+run_id: 4e63dd25597d47eb9ab5346783b0e357
+run_name: Track2_CanLai_Synthetic_ExtraTrees__Cyclic_FWI_Setup__RobustScaler
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783702331551
+status: 3
+tags: []
+user_id: Asus
