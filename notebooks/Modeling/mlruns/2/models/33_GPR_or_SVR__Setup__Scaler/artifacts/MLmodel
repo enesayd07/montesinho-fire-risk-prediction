@@ -1,0 +1,23 @@
+artifact_path: file:///c:/Users/Asus/montesinho-fire-risk-prediction/notebooks/Modeling/mlruns/2/models/m-ce58f63165f24abc91beb4b1387ba382/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.10.19
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.7.2
+    skops_trusted_types: null
+mlflow_version: 3.14.0
+model_id: m-ce58f63165f24abc91beb4b1387ba382
+model_size_bytes: 103239
+model_uuid: m-ce58f63165f24abc91beb4b1387ba382
+prompts: null
+run_id: dd0c439638db4bfc8f19e4096f59db30
+utc_time_created: '2026-07-10 11:55:57.691670'

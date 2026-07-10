@@ -1,0 +1,6 @@
+artifact_path: model
+cortez_mad_ha: 19.8146
+model_file: kernel_model.skops
+model_name: GPR_Matern_White
+run_id: 0781744c25db42ba9db1a00817c9c749
+setup_name: STFWI_Setup

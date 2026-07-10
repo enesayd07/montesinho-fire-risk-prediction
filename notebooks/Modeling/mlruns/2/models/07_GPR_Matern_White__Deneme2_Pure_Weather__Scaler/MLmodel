@@ -1,0 +1,6 @@
+artifact_path: model
+cortez_mad_ha: 19.8161
+model_file: kernel_model.skops
+model_name: GPR_Matern_White
+run_id: fde3cc3779124f219abb205d7585c9b7
+setup_name: Deneme2_Pure_Weather

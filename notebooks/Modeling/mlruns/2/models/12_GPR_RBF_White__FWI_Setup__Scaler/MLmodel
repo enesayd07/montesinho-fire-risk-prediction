@@ -1,0 +1,6 @@
+artifact_path: model
+cortez_mad_ha: 19.8161
+model_file: kernel_model.skops
+model_name: GPR_RBF_White
+run_id: 67f1b69bdb414ef282662de1729e85ad
+setup_name: FWI_Setup
