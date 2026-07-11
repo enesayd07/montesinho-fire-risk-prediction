@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/Asus/montesinho-fire-risk-prediction/notebooks/Modeling/mlruns/4/e4b79b82f680408c901593e491f99cf5/artifacts
+end_time: 1783769263831
+entry_point_name: ''
+experiment_id: '4'
+lifecycle_stage: active
+run_id: e4b79b82f680408c901593e491f99cf5
+run_name: Exp4_TwoStage_SafetyShield90Recall_CB_CB
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783769263607
+status: 3
+tags: []
+user_id: Asus

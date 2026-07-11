@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/Asus/montesinho-fire-risk-prediction/notebooks/Modeling/mlruns/4/95b62dbfa1ed4b5f9c196f74ce938578/artifacts
+end_time: 1783769260532
+entry_point_name: ''
+experiment_id: '4'
+lifecycle_stage: active
+run_id: 95b62dbfa1ed4b5f9c196f74ce938578
+run_name: Exp4_TwoStage_PureMAD_XGB_XGB
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783769260286
+status: 3
+tags: []
+user_id: Asus
