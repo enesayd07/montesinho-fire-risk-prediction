@@ -1,0 +1,10 @@
+=========================================================
+MODEL ADI           : 01_RegularizedMLP_SinCos_Huber
+=========================================================
+GENEL SIRALAMA      : 1. Sıra
+ORTALAMA MAD SKORU  : 12.6790 ± 7.9079 hektar
+ORTALAMA RMSE SKORU : 46.9051 hektar
+EN İYİ EPOK         : 19
+=========================================================
+PYTORCH DOSYASI     : 01_RegularizedMLP_SinCos_Huber_Model.pth
+=========================================================

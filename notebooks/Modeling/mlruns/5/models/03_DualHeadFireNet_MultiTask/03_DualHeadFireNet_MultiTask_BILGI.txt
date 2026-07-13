@@ -1,0 +1,10 @@
+=========================================================
+MODEL ADI           : 03_DualHeadFireNet_MultiTask
+=========================================================
+GENEL SIRALAMA      : 3. Sıra
+ORTALAMA MAD SKORU  : 12.7171 ± 7.8791 hektar
+ORTALAMA RMSE SKORU : 47.0526 hektar
+EN İYİ EPOK         : 15
+=========================================================
+PYTORCH DOSYASI     : 03_DualHeadFireNet_MultiTask_Model.pth
+=========================================================

@@ -1,0 +1,10 @@
+=========================================================
+MODEL ADI           : 07_TabularResNet_StandardTime_MSE
+=========================================================
+GENEL SIRALAMA      : 7. Sıra
+ORTALAMA MAD SKORU  : 12.8925 ± 7.8793 hektar
+ORTALAMA RMSE SKORU : 46.6421 hektar
+EN İYİ EPOK         : 6
+=========================================================
+PYTORCH DOSYASI     : 07_TabularResNet_StandardTime_MSE_Model.pth
+=========================================================

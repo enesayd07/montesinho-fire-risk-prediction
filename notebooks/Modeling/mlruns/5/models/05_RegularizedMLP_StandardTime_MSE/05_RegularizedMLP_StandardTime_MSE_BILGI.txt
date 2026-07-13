@@ -1,0 +1,10 @@
+=========================================================
+MODEL ADI           : 05_RegularizedMLP_StandardTime_MSE
+=========================================================
+GENEL SIRALAMA      : 5. Sıra
+ORTALAMA MAD SKORU  : 12.8240 ± 7.9077 hektar
+ORTALAMA RMSE SKORU : 46.7341 hektar
+EN İYİ EPOK         : 28
+=========================================================
+PYTORCH DOSYASI     : 05_RegularizedMLP_StandardTime_MSE_Model.pth
+=========================================================

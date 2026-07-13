@@ -1,0 +1,10 @@
+=========================================================
+MODEL ADI           : 10_EmbeddedRegularizedMLP_EntityEmbed
+=========================================================
+GENEL SIRALAMA      : 10. Sıra
+ORTALAMA MAD SKORU  : 13.0073 ± 7.8039 hektar
+ORTALAMA RMSE SKORU : 46.8524 hektar
+EN İYİ EPOK         : 22
+=========================================================
+PYTORCH DOSYASI     : 10_EmbeddedRegularizedMLP_EntityEmbed_Model.pth
+=========================================================

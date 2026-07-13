@@ -1,0 +1,10 @@
+=========================================================
+MODEL ADI           : 02_RegularizedMLP_SinCos_LogCosh
+=========================================================
+GENEL SIRALAMA      : 2. Sıra
+ORTALAMA MAD SKORU  : 12.6828 ± 7.8672 hektar
+ORTALAMA RMSE SKORU : 46.9026 hektar
+EN İYİ EPOK         : 19
+=========================================================
+PYTORCH DOSYASI     : 02_RegularizedMLP_SinCos_LogCosh_Model.pth
+=========================================================
