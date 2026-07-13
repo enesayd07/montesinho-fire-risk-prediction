@@ -1,0 +1,19 @@
+{
+    "model_title": "Soft Hurdle 3: İzotonik Kalibre LightGBM * SLSQP",
+    "folder_name": "09_SoftHurdle3_Izotonik_LightGBM",
+    "cv_folds": "50-Fold CV",
+    "strategy": "Yol 2 - Winsorization & Hurdle Pipeline",
+    "metrics": {
+        "normal_fold_avg_rmse_ha": 29.845,
+        "global_pooled_rmse_ha": 27.5404,
+        "global_rmsle": 1.5412,
+        "normal_fold_avg_mad_ha": 12.6417,
+        "rmse_variance_ha": 2.3046
+    },
+    "parameters": {
+        "raw_optuna_params": "{'clip_limit': 171.71200275727657, 'gamma': 0.8037167760583543, 'w_svr': 0.10133030331375426, 'w_slsqp': 0.8596498751955511}",
+        "clip_limit_ha": 171.712,
+        "tau_threshold": 0.48,
+        "gamma_power": 0.8037
+    }
+}

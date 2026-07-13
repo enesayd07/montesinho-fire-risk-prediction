@@ -1,0 +1,19 @@
+{
+    "model_title": "Level-1 Stacking: Hedef Dönüşümlü Log-Stacking",
+    "folder_name": "05_Level1_Log_Stacking",
+    "cv_folds": "50-Fold CV",
+    "strategy": "Yol 2 - Winsorization & Hurdle Pipeline",
+    "metrics": {
+        "normal_fold_avg_rmse_ha": 29.6774,
+        "global_pooled_rmse_ha": 33.6219,
+        "global_rmsle": 1.468,
+        "normal_fold_avg_mad_ha": 12.6695,
+        "rmse_variance_ha": 3.9445
+    },
+    "parameters": {
+        "raw_optuna_params": "{'clip_limit': 288.06508116756623, 'w_svr': 0.9876573808390906, 'w_mlp': 0.27780289045362627, 'w_slsqp': 0.18807836392607696}",
+        "clip_limit_ha": 288.0651,
+        "tau_threshold": 0.48,
+        "gamma_power": 1.5
+    }
+}

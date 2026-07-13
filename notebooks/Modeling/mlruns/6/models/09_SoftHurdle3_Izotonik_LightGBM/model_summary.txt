@@ -1,0 +1,9 @@
+MODEL : Soft Hurdle 3: İzotonik Kalibre LightGBM * SLSQP
+KLASÖR : 09_SoftHurdle3_Izotonik_LightGBM
+--------------------------------------------------
+Normal Fold-Avg RMSE : 29.8450 ha
+Global Pooled RMSE : 27.5404 ha
+Global RMSLE (Log) : 1.5412
+Normal Fold-Avg MAD : 12.6417 ha
+--------------------------------------------------
+Optimal Parametreler : {'clip_limit': 171.71200275727657, 'gamma': 0.8037167760583543, 'w_svr': 0.10133030331375426, 'w_slsqp': 0.8596498751955511}

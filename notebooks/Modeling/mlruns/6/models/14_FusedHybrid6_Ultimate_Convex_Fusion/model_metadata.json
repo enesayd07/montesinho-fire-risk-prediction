@@ -1,0 +1,19 @@
+{
+    "model_title": "Fused Hybrid 6: Ultimate Convex Fusion (Defter 5 Şampiyonu)",
+    "folder_name": "14_FusedHybrid6_Ultimate_Convex_Fusion",
+    "cv_folds": "50-Fold CV",
+    "strategy": "Yol 2 - Winsorization & Hurdle Pipeline",
+    "metrics": {
+        "normal_fold_avg_rmse_ha": 29.8254,
+        "global_pooled_rmse_ha": 35.3592,
+        "global_rmsle": 1.5794,
+        "normal_fold_avg_mad_ha": 12.6214,
+        "rmse_variance_ha": 5.5338
+    },
+    "parameters": {
+        "raw_optuna_params": "{'clip_limit': 334.08268165060645, 'tau': 0.41221275458905016, 'w_svr': 0.2429564667567793, 'w_slsqp': 0.7547340170256533, 'w_log': 0.09017405294742792}",
+        "clip_limit_ha": 334.0827,
+        "tau_threshold": 0.4122,
+        "gamma_power": 1.5
+    }
+}
