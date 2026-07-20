@@ -1,7 +1,0 @@
-artifact_path: model
-cortez_mad_ha: 19.842
-model_name: NuSVR_RBF
-model_weight_file: kernel_model.skops
-run_id: ec7a00d0788042ce8783b4a87864fc50
-setup_name: Deneme2_Pure_Weather
-status: Moved_to_Models_Vitrin

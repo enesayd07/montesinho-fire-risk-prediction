@@ -1,9 +1,0 @@
-MODEL : Level-1 Stacking: Pareto Çift-Kayıp SLSQP Yığınlama
-KLASÖR : 03_Level1_Pareto_SLSQP
---------------------------------------------------
-Normal Fold-Avg RMSE : 29.7141 ha
-Global Pooled RMSE : 32.0003 ha
-Global RMSLE (Log) : 1.4974
-Normal Fold-Avg MAD : 12.6536 ha
---------------------------------------------------
-Optimal Parametreler : {'clip_limit': 249.77991713916748, 'w_svr': 0.744866216156327, 'w_mlp': 0.2532564007080079, 'w_slsqp': 0.13861231968553367}

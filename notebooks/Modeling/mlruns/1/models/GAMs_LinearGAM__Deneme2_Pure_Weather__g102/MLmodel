@@ -1,9 +1,0 @@
-artifact_path: model
-library: pygam
-metrics:
-  cortez_mad_ha: 19.7955
-  r2_score: 0.0057
-model_name: GAMs_LinearGAM
-run_id: 04c38142d83b4d2997192e7024709ed9
-setup_name: Deneme2_Pure_Weather
-status: Registered_to_MLflow_DB

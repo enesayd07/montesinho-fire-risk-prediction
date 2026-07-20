@@ -1,9 +1,0 @@
-MODEL : Soft Hurdle 4: İzotonik Kalibre Topluluk * SLSQP
-KLASÖR : 10_SoftHurdle4_Izotonik_Topluluk
---------------------------------------------------
-Normal Fold-Avg RMSE : 29.8726 ha
-Global Pooled RMSE : 31.5695 ha
-Global RMSLE (Log) : 1.5552
-Normal Fold-Avg MAD : 12.6428 ha
---------------------------------------------------
-Optimal Parametreler : {'clip_limit': 237.61419822444125, 'gamma': 0.9730223700329048, 'w_svr': 0.07918760302240901, 'w_slsqp': 0.875139983178491}

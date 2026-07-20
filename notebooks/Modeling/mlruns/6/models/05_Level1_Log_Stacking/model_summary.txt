@@ -1,9 +1,0 @@
-MODEL : Level-1 Stacking: Hedef Dönüşümlü Log-Stacking
-KLASÖR : 05_Level1_Log_Stacking
---------------------------------------------------
-Normal Fold-Avg RMSE : 29.6774 ha
-Global Pooled RMSE : 33.6219 ha
-Global RMSLE (Log) : 1.4680
-Normal Fold-Avg MAD : 12.6695 ha
---------------------------------------------------
-Optimal Parametreler : {'clip_limit': 288.06508116756623, 'w_svr': 0.9876573808390906, 'w_mlp': 0.27780289045362627, 'w_slsqp': 0.18807836392607696}

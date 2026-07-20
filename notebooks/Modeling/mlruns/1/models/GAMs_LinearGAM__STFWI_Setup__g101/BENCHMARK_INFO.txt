@@ -1,3 +1,0 @@
-Bu klasör GAMs_LinearGAM (STFWI_Setup) modeline aittir.
-Cortez MAD Hatası: 19.7792 ha
-R2 Skoru: 0.0303

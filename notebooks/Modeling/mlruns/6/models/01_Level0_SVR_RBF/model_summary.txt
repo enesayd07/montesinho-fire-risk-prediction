@@ -1,9 +1,0 @@
-MODEL : Level-0 Tekil Şampiyon Referansı (07_SVR_RBF)
-KLASÖR : 01_Level0_SVR_RBF
---------------------------------------------------
-Normal Fold-Avg RMSE : 29.7303 ha
-Global Pooled RMSE : 30.1040 ha
-Global RMSLE (Log) : 1.5024
-Normal Fold-Avg MAD : 12.6525 ha
---------------------------------------------------
-Optimal Parametreler : {'clip_limit': 206.76158651088508, 'w_svr': 0.97254492200669, 'w_mlp': 0.4644111094369, 'w_slsqp': 0.6166788527583089}

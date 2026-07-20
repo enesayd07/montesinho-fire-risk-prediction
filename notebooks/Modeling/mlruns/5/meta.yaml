@@ -1,9 +1,0 @@
-artifact_location: file:./mlruns/5
-creation_time: 1783938426254
-effective_trace_archival_retention: null
-experiment_id: '5'
-last_update_time: 1783938426254
-lifecycle_stage: active
-name: 05_Top10_DeepLearning_Champions
-trace_location: null
-workspace: default

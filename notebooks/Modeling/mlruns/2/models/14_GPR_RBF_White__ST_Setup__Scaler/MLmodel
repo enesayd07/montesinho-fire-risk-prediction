@@ -1,6 +1,0 @@
-artifact_path: model
-cortez_mad_ha: 19.8161
-model_file: kernel_model.skops
-model_name: GPR_RBF_White
-run_id: 84a98d48381840969c746fe410d0053b
-setup_name: ST_Setup

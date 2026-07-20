@@ -1,9 +1,0 @@
-MODEL : Hard Hurdle 5: Topluluk Bekçi (τ=0.48) + SLSQP
-KLASÖR : 08_HardHurdle5_Topluluk_tau048
---------------------------------------------------
-Normal Fold-Avg RMSE : 29.8631 ha
-Global Pooled RMSE : 35.7683 ha
-Global RMSLE (Log) : 1.5845
-Normal Fold-Avg MAD : 12.6308 ha
---------------------------------------------------
-Optimal Parametreler : {'clip_limit': 344.63701523263296, 'tau': 0.4223078236933991, 'w_svr': 0.8387021267789284, 'w_slsqp': 0.4783580543521318, 'w_log': 0.10639078516612781, 'w_gate': 0.621030154193124}

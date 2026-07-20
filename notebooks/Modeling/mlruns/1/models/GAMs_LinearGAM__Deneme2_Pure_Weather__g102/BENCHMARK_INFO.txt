@@ -1,3 +1,0 @@
-Bu klasör GAMs_LinearGAM (Deneme2_Pure_Weather) modeline aittir.
-Cortez MAD Hatası: 19.7955 ha
-R2 Skoru: 0.0057

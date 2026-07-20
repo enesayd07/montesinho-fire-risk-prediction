@@ -1,3 +1,0 @@
-Bu klasör GAMs_LinearGAM (ST_Setup) modeline aittir.
-Cortez MAD Hatası: 19.8188 ha
-R2 Skoru: -0.0006

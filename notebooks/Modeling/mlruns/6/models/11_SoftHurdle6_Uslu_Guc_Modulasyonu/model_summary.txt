@@ -1,9 +1,0 @@
-MODEL : Soft Hurdle 6: Üslü Güç Modülasyonu (γ=1.5) * SLSQP
-KLASÖR : 11_SoftHurdle6_Uslu_Guc_Modulasyonu
---------------------------------------------------
-Normal Fold-Avg RMSE : 29.8473 ha
-Global Pooled RMSE : 34.0323 ha
-Global RMSLE (Log) : 1.5622
-Normal Fold-Avg MAD : 12.6451 ha
---------------------------------------------------
-Optimal Parametreler : {'clip_limit': 296.290938927771, 'gamma': 0.9633352771002122, 'w_svr': 0.06584175614586915, 'w_slsqp': 0.954842796535468}

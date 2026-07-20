@@ -1,0 +1,6 @@
+# Machine Learning Artifacts (Bunları Github'a gönderme)
+mlruns/
+outputs/
+*.pkl
+*.pth
+*.h5

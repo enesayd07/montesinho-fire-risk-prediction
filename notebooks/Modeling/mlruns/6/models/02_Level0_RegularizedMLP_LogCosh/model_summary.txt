@@ -1,9 +1,0 @@
-MODEL : Level-0 Deep Net Şampiyonu (RegularizedMLP_LogCosh)
-KLASÖR : 02_Level0_RegularizedMLP_LogCosh
---------------------------------------------------
-Normal Fold-Avg RMSE : 29.7283 ha
-Global Pooled RMSE : 34.2562 ha
-Global RMSLE (Log) : 1.5020
-Normal Fold-Avg MAD : 12.6526 ha
---------------------------------------------------
-Optimal Parametreler : {'clip_limit': 305.64217014778905, 'w_svr': 0.9859693460929284, 'w_mlp': 0.19483472119832188, 'w_slsqp': 0.10186187569522358}

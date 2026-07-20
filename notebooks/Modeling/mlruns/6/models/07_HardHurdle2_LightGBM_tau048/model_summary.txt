@@ -1,9 +1,0 @@
-MODEL : Hard Hurdle 2: LightGBM Bekçi (τ=0.48) + SLSQP (Kesin Engel Rekoru)
-KLASÖR : 07_HardHurdle2_LightGBM_tau048
---------------------------------------------------
-Normal Fold-Avg RMSE : 29.8254 ha
-Global Pooled RMSE : 35.3592 ha
-Global RMSLE (Log) : 1.5794
-Normal Fold-Avg MAD : 12.6214 ha
---------------------------------------------------
-Optimal Parametreler : {'clip_limit': 334.08268165060645, 'tau': 0.41221275458905016, 'w_svr': 0.2429564667567793, 'w_slsqp': 0.7547340170256533, 'w_log': 0.09017405294742792}
