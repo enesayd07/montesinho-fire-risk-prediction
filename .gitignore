@@ -4,3 +4,6 @@ outputs/
 *.pkl
 *.pth
 *.h5
+data/
+catboost_info/
+*.csv
