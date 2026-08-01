@@ -5,3 +5,5 @@ numpy
 scikit-learn
 torch
 pytorch_tabular
+
+requests
