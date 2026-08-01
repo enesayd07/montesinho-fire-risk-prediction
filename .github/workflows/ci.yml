@@ -26,4 +26,6 @@ jobs:
           pip install pytest httpx
 
       - name: Run tests
+        env:
+          API_KEY: ci-test-key-montesinho
         run: python -m pytest tests/ -v

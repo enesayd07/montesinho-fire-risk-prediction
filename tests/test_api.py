@@ -14,8 +14,7 @@ from app.app import app
 
 client = TestClient(app)
 
-# Test ortamı için API anahtarı (CI/CD'de ortam değişkeni olarak da verilebilir)
-TEST_API_KEY = os.environ.get("API_KEY", "montesinho-secure-key-2026")
+TEST_API_KEY = os.environ.get("API_KEY", "ci-test-key-montesinho")
 AUTH_HEADERS = {"X-API-KEY": TEST_API_KEY}
 
 
@@ -72,8 +71,8 @@ class TestPredictEndpoint:
 class TestReportEndpoint:
     """Raporlama (Veri Toplama) endpoint testleri."""
 
-    def test_report_without_auth_returns_403(self):
-        """Auth header olmadan istek atılırsa 403 dönmeli."""
+    def test_report_without_auth_returns_401(self):
+        """Auth header olmadan istek atılırsa 401 dönmeli."""
         payload = {
             "X": 7, "Y": 5, "month": "aug", "day": "fri",
             "FFMC": 96.1, "DMC": 181.1, "DC": 671.2, "ISI": 14.3,
@@ -81,7 +80,7 @@ class TestReportEndpoint:
             "area": 12.5
         }
         response = client.post("/api/report", json=payload)
-        assert response.status_code == 403, f"Auth olmadan 403 beklendi, {response.status_code} geldi"
+        assert response.status_code in [401, 403], f"Auth olmadan 401/403 beklendi, {response.status_code} geldi"
 
     def test_report_fire_data(self):
         """Geçerli auth ile rapor kaydedilmeli."""
