@@ -1,4 +1,4 @@
-name: CD - Deploy to Hugging Face
+name: CD - Deploy to Render
 
 on:
   workflow_run:
@@ -12,15 +12,5 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Push to Hugging Face Space
-        env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: |
-          git remote add hf https://huggingface.co/spaces/${{ secrets.HF_SPACE_ID }} || true
-          git remote set-url hf https://huggingface.co/spaces/${{ secrets.HF_SPACE_ID }}
-          git push https://user:$HF_TOKEN@huggingface.co/spaces/${{ secrets.HF_SPACE_ID }} main --force
+      - name: Trigger Render Deploy
+        run: curl -s "${{ secrets.RENDER_DEPLOY_HOOK }}"
