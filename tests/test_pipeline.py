@@ -1,6 +1,6 @@
 """
 Pipeline Birim Testleri
-12 ham girdi -> 20 öznitelik dönüşümünü doğrular.
+12 ham girdi -> 22 öznitelik dönüşümünü doğrular.
 """
 import sys
 import os
@@ -21,10 +21,10 @@ def get_sample_input():
 
 
 class TestPipelineOutputShape:
-    def test_output_has_20_columns(self):
+    def test_output_has_22_columns(self):
         pipe = FireFeatureEngineeringPipeline()
         result = pipe.transform(get_sample_input())
-        assert result.shape[1] == 20, f"Beklenen 20 sütun, gelen {result.shape[1]}"
+        assert result.shape[1] == 22, f"Beklenen 22 sütun, gelen {result.shape[1]}"
 
     def test_month_and_day_dropped(self):
         pipe = FireFeatureEngineeringPipeline()
@@ -80,12 +80,12 @@ class TestBinaryFeatures:
         result = pipe.transform(df)
         assert result["is_peak_season"].iloc[0] == 1, "Ağustos pik sezon, 1 olmalı"
 
-    def test_not_peak_season_march(self):
+    def test_not_peak_season_january(self):
         pipe = FireFeatureEngineeringPipeline()
         df = get_sample_input()
-        df["month"] = "mar"
+        df["month"] = "jan"
         result = pipe.transform(df)
-        assert result["is_peak_season"].iloc[0] == 0, "Mart pik sezon değil, 0 olmalı"
+        assert result["is_peak_season"].iloc[0] == 0, "Ocak pik sezon değil, 0 olmalı"
 
 
 class TestInteractionFeatures:
@@ -111,3 +111,15 @@ class TestInteractionFeatures:
         df["DC"] = 200.0
         result = pipe.transform(df)
         assert result["double_drought"].iloc[0] == 0, "DMC<100 ve DC<500 iken double_drought=0 olmalı"
+
+
+class TestSpatialFeatures:
+    def test_distance_to_center_exists(self):
+        pipe = FireFeatureEngineeringPipeline()
+        result = pipe.transform(get_sample_input())
+        assert "distance_to_center" in result.columns, "distance_to_center sütunu eksik"
+
+    def test_dynamic_seasonal_hotspot_exists(self):
+        pipe = FireFeatureEngineeringPipeline()
+        result = pipe.transform(get_sample_input())
+        assert "dynamic_seasonal_hotspot_distance" in result.columns, "dynamic_seasonal_hotspot_distance sütunu eksik"

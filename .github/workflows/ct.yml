@@ -8,6 +8,9 @@ on:
         required: false
         default: "Scheduled retrain"
 
+permissions:
+  contents: write
+
 jobs:
   retrain:
     runs-on: ubuntu-latest

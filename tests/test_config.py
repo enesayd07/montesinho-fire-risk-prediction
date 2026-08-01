@@ -57,7 +57,7 @@ class TestPaths:
     """Yol sabitlerinin doğru formatta olduğunu test eder."""
 
     def test_champion_path_ends_correctly(self):
-        assert CHAMPION_MODEL_PATH.endswith("champion_node"), (
+        assert CHAMPION_MODEL_PATH.endswith("sklearn_node.pkl"), (
             f"CHAMPION_MODEL_PATH '{CHAMPION_MODEL_PATH}' ile bitiyor, "
-            f"'champion_node' ile bitmeli"
+            f"'sklearn_node.pkl' ile bitmeli"
         )

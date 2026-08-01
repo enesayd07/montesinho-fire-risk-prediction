@@ -21,11 +21,12 @@ PROJECT_ROOT = os.path.dirname(BASE_DIR)
 app.mount("/static", StaticFiles(directory=os.path.join(BASE_DIR, "static")), name="static")
 templates = Jinja2Templates(directory=os.path.join(BASE_DIR, "templates"))
 
-# --- GÜVENLİK (AUTH) ---
-API_KEY = "montesinho-secure-key-2026"
+API_KEY = os.environ.get("API_KEY")
 api_key_header = APIKeyHeader(name="X-API-KEY", auto_error=True)
 
 async def get_api_key(api_key: str = Security(api_key_header)):
+    if not API_KEY:
+        raise HTTPException(status_code=500, detail="Sunucu yapılandırma hatası: API_KEY tanımlı değil")
     if api_key != API_KEY:
         raise HTTPException(status_code=403, detail="Yetkisiz Erişim: Geçersiz API Anahtarı")
     return api_key
