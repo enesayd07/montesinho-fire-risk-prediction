@@ -1,0 +1,240 @@
+﻿/* Genel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    color: #f8fafc;
+    /* Muazzam orman arka planı */
+    background: url('https://images.unsplash.com/photo-1511497584788-876760111969?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+/* Kapsayıcı (Flexbox) */
+.app-container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Glassmorphism Ortak Sınıfı (Buzlu Cam Efekti) */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Sol Panel (Sidebar) */
+.sidebar {
+    width: 350px;
+    padding: 30px 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    margin-bottom: 25px;
+}
+
+/* Form Izgarası */
+.form-grid {
+    display: flex;
+    gap: 15px;
+}
+
+.form-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Form Elemanları (Input & Select) */
+input[type="number"], select {
+    width: 100%;
+    padding: 8px 10px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="number"]:focus, select:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 8px rgba(56, 189, 248, 0.5);
+    background: rgba(0, 0, 0, 0.6);
+}
+
+option {
+    background-color: #1e293b;
+    color: white;
+}
+
+/* Buton */
+.submit-btn {
+    margin-top: 30px;
+    width: 100%;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #0f172a;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.submit-btn:hover {
+    background: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
+}
+
+/* Ana Ekran (Sağ Taraf) */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.main-title {
+    font-size: 6rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 0;
+    letter-spacing: -3px;
+    text-shadow: 0px 4px 20px rgba(0,0,0,0.8);
+}
+
+.sub-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #cbd5e1;
+    margin-bottom: 50px;
+    text-shadow: 0px 2px 10px rgba(0,0,0,0.8);
+    letter-spacing: 1px;
+}
+
+/* Sonuç Kutusu (Ortadaki Cam Panel) */
+.result-box {
+    width: 100%;
+    max-width: 600px;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.status-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.status-desc {
+    color: #e2e8f0;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/* Dinamik Sonuçlar */
+.result-header {
+    color: #cbd5e1;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.result-value {
+    font-size: 6rem;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1;
+    margin: 20px 0;
+    text-shadow: 0px 4px 15px rgba(0,0,0,0.6);
+}
+
+.unit {
+    font-size: 2rem;
+    color: #94a3b8;
+}
+
+.result-label {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Risk Renkleri */
+.risk-low { color: #4ade80; text-shadow: 0 0 15px rgba(74, 222, 128, 0.6); }
+.risk-medium { color: #fbbf24; text-shadow: 0 0 15px rgba(251, 191, 36, 0.6); }
+.risk-high { color: #f97316; text-shadow: 0 0 15px rgba(249, 115, 22, 0.6); }
+.risk-critical { 
+    color: #ef4444; 
+    text-shadow: 0 0 20px rgba(239, 68, 68, 0.9);
+    animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.05); }
+}
+
+
+/* YENI ARKA PLAN ANIMASYONLARI */
+body {
+    transition: background-image 1.5s ease-in-out;
+}
+body.risk-low {
+    background-image: url("bg-low.jpg") !important;
+}
+body.risk-medium {
+    background-image: url("bg-medium.jpg") !important;
+}
+body.risk-high, body.risk-critical {
+    background-image: url("bg-high.jpg") !important;
+}

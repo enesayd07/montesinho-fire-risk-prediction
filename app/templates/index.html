@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montesinho Fire Risk</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar glass-panel">
+            <h2 class="sidebar-title">Parametreler</h2>
+            <hr class="divider">
+            <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                <button type="button" id="mode-predict" style="flex: 1; padding: 10px; border-radius: 6px; border: none; cursor: pointer; background: #3b82f6; color: white; font-weight: bold;">Tahmin Modu</button>
+                <button type="button" id="mode-report" style="flex: 1; padding: 10px; border-radius: 6px; border: none; cursor: pointer; background: rgba(255,255,255,0.2); color: white; font-weight: bold;">Rapor Modu</button>
+            </div>
+            
+            <form id="prediction-form">
+                <div class="form-grid">
+                    <div class="form-col">
+                        <label>X Koor.<input type="number" name="X" min="1" max="9" value="7"></label>
+                        <label>Ay
+                            <select name="month">
+                                <option value="jan">Ocak</option>
+                                <option value="feb">Şubat</option>
+                                <option value="mar">Mart</option>
+                                <option value="apr">Nisan</option>
+                                <option value="may">Mayıs</option>
+                                <option value="jun">Haziran</option>
+                                <option value="jul">Temmuz</option>
+                                <option value="aug" selected>Ağustos</option>
+                                <option value="sep">Eylül</option>
+                                <option value="oct">Ekim</option>
+                                <option value="nov">Kasım</option>
+                                <option value="dec">Aralık</option>
+                            </select>
+                        </label>
+                        <label>Sıcaklık (°C)<input type="number" name="temp" step="0.1" value="28.7"></label>
+                        <label>Rüzgar (km/h)<input type="number" name="wind" step="0.1" value="4.5"></label>
+                        <label>FFMC<input type="number" name="FFMC" step="0.1" value="96.1"></label>
+                        <label>DC<input type="number" name="DC" step="0.1" value="671.2"></label>
+                    </div>
+                    
+                    <div class="form-col">
+                        <label>Y Koor.<input type="number" name="Y" min="1" max="9" value="5"></label>
+                        <label>Gün
+                            <select name="day">
+                                <option value="mon">Pazartesi</option>
+                                <option value="tue">Salı</option>
+                                <option value="wed">Çarşamba</option>
+                                <option value="thu">Perşembe</option>
+                                <option value="fri" selected>Cuma</option>
+                                <option value="sat">Cumartesi</option>
+                                <option value="sun">Pazar</option>
+                            </select>
+                        </label>
+                        <label>Nem (RH %)<input type="number" name="RH" step="0.1" value="30.0"></label>
+                        <label>Yağmur (mm)<input type="number" name="rain" step="0.1" value="0.0"></label>
+                        <label>DMC<input type="number" name="DMC" step="0.1" value="181.1"></label>
+                        <label>ISI<input type="number" name="ISI" step="0.1" value="14.3"></label>
+                    </div>
+                </div>
+                
+                <div id="area-group" style="display: none; margin-top: 25px; margin-bottom: 25px; padding: 10px; background: rgba(220, 38, 38, 0.2); border-radius: 6px;">
+                    <label style="color: #fca5a5; font-weight: 800; font-size: 0.9em;">Gerçekleşen Hasar Alanı (ha)
+                        <input type="number" name="area" step="0.1" value="0.0" style="width: 100%; margin-top: 5px; padding: 8px;">
+                    </label>
+                </div>
+                <button type="submit" class="submit-btn" id="analyze-btn">ANALİZİ BAŞLAT</button>
+            </form>
+        </aside>
+
+        <main class="main-content">
+            <h1 class="main-title">MONTESINHO.</h1>
+            <p class="sub-title">Yapay Zeka Tabanlı Orman Yangını Tahmin Sistemi</p>
+            
+            <div class="result-box glass-panel" id="result-box">
+                <div id="initial-state">
+                    {% if model_loaded %}
+                        <div class="status-title" style="color: #0f172a;">Sistem Hazır</div>
+                        <div class="status-desc">Lütfen sol panelden meteorolojik verileri girin ve analizi başlatın.</div>
+                    {% else %}
+                        <div class="status-title" style="color: #dc2626;">Sistem Beklemede</div>
+                        <div class="status-desc">Arka plandaki model eğitimi henüz tamamlanmadı. Lütfen eğitimin bitmesini bekleyin.</div>
+                    {% endif %}
+                </div>
+                
+                <div id="dynamic-result" style="display: none;">
+                    <div class="result-header">TAHMİN EDİLEN HASAR ALANI</div>
+                    <div class="result-value"><span id="area-val">0</span> <span class="unit">ha</span></div>
+                    <div id="margin-val" style="font-size: 1.1em; color: rgba(255,255,255,0.7); margin-bottom: 20px; font-weight: 600;">(± %90 Güvenle: 0 - 0 ha)</div>
+                    <div class="result-label" id="risk-label">RİSK DURUMU</div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
