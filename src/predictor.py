@@ -5,11 +5,6 @@ import joblib
 from config import TWEEDIE_POWER
 from pipeline import FireFeatureEngineeringPipeline
 
-# Modeli joblib ile cekerken taninmasi icin class'i import ediyoruz
-from model_trainer import HurdleNODE
-import __main__
-__main__.HurdleNODE = HurdleNODE
-
 warnings.filterwarnings('ignore')
 
 class FireRiskPredictor:
@@ -19,7 +14,7 @@ class FireRiskPredictor:
 
     def _load_model(self):
         if self.model is None:
-            # Optuna modeli yerine senin 17.1M parametreli NODE modelini yukluyoruz
+            # Artık çok hafif olan SVR modelini yüklüyoruz
             self.model = joblib.load('models/sklearn_node.pkl')
         return self.model
 
@@ -29,11 +24,9 @@ class FireRiskPredictor:
         
         model = self._load_model()
         
-        # Modelin icine .values olarak veriyoruz
         y_pred_tweedie = model.predict(processed_df.values)[0]
         
-        # Model egitilirken icine gomdugumuz margin degerini cekiyoruz
-        margin = getattr(model, 'margin_raw_', 9.16)
+        margin = getattr(model, 'margin_raw_', 6.92)
         
         if y_pred_tweedie <= 0:
             return 0.0, margin
@@ -55,6 +48,6 @@ if __name__ == '__main__':
     try:
         predictor = FireRiskPredictor()
         tahmin, marj = predictor.predict(sample_input)
-        print(f"Tahmin: {tahmin} Hektar (± {marj} ha Guvenle)")
+        print(f"INFO: Tahmin: {tahmin} Hektar (± {marj} ha Güvenle)")
     except Exception as e:
-        print(f"Model yuklenemedi: {e}")
+        print(f"ERROR: Model yüklenemedi: {e}")

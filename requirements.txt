@@ -1,9 +1,6 @@
 ﻿fastapi
-uvicorn[standard]
+uvicorn
 pandas
 numpy
 scikit-learn
-torch
-pytorch_tabular
-
-requests
+joblib
